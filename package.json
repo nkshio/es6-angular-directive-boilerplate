@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A directive to use highlight.js in angularjs",
   "scripts": {
-    "build": "webpack",
+    "build": "NODE_ENV=PROD webpack",
     "postinstall": "npm run check-dependencies",
     "check-dependencies": "nsp check",
     "lint": "eslint './'",
@@ -66,5 +66,8 @@
     "pre-git": "^3.10.0",
     "webpack": "^1.12.11"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  }
 }
